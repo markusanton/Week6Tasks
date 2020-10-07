@@ -20,6 +20,17 @@ namespace Task3
                 if (value < minint) minint = value;
                 if (value > maxint) maxint = value;
             }
+            Console.WriteLine(randomArray[0]);
+            Console.WriteLine(randomArray[1]);
+            Console.WriteLine(randomArray[2]);
+            Console.WriteLine(randomArray[3]);
+            Console.WriteLine(randomArray[4]);
+            Console.WriteLine(randomArray[5]);
+            Console.WriteLine(randomArray[6]);
+            Console.WriteLine(randomArray[7]);
+            Console.WriteLine(randomArray[8]);
+            Console.WriteLine(randomArray[9]);
+
             Console.WriteLine($"Min: {minint}");
             Console.WriteLine($"Max: {maxint}");
 
