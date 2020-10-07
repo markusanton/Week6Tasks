@@ -11,11 +11,18 @@ namespace Task3
             Random rnd = new Random();
             for (int i = 0; i < randomArray.Length; ++i)
                 randomArray[i] = rnd.Next(1, 11);
-            int max = randomArray.Max();
-            int min = randomArray.Min();
+           
+            int minint = randomArray[0];
+            int maxint = randomArray[0];
+            
+            foreach (int value in randomArray)
+            {
+                if (value < minint) minint = value;
+                if (value > maxint) maxint = value;
+            }
+            Console.WriteLine($"Min: {minint}");
+            Console.WriteLine($"Max: {maxint}");
 
-            Console.WriteLine($"Minimum: {min}");
-            Console.WriteLine($"Max: {max}");
         }
     }
 }
